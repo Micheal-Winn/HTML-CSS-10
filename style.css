@@ -321,10 +321,10 @@ footer p {
     padding: .3rem .2rem;
 }
 @media (min-width: 1000px) {
-    header,main,footer {
+    /* header,main,footer {
         max-width: 1440px;
         margin: 0  auto;
-    }
+    } */
     main p {
         text-align: left;
     }
@@ -372,8 +372,8 @@ footer p {
         display: flex;
         width: 70%;
         margin: 0 auto 3rem;
-        gap: 23rem;
-        padding: 3rem 0 5rem;
+        gap: 18rem;
+        padding: 3rem 2rem 5rem 7rem;
     }
     .icon-communities img, .icon-message img {
         width: 15%;
@@ -384,19 +384,27 @@ footer p {
     .total {
         font-size: 1.4rem;
     }
-    .grow-ctr {
+    .fix-ctr {
         gap: 5rem;
         padding: 0;
     }
-    .grow-ctr, .users-ctr {
+    .fix-ctr, .fix2-ctr, .fix3-ctr, .footer-ctr, .record, .screen-mockups, .top-community-ctr, header{
+        max-width: 1340px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .fix-ctr, .fix3-ctr {
         display: flex;
         flex-direction: row-reverse;
     }
+
     .left-grow {
         padding: 12rem 3.9rem 0 8rem;
     }
-    .left-grow p,.right-conversation p, .users-ctr p {
+    .left-grow p,.right-conversation p, .fix3-ctr p {
         padding-inline: 0;
+        font-size: 1.1rem;
     } 
     .img {
         width: 40%;
@@ -404,7 +412,7 @@ footer p {
     .left-grow {
         width: 60%;
     }
-    .conversation-ctr {
+    .fix2-ctr {
         padding-top: 7rem;
         display: flex;
     }
